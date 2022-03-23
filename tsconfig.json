@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "allowJs": true,
+    "outDir": "./build",
+    "module": "CommonJS",
+    "target": "ESNext",
+    "esModuleInterop": true,
+    "rootDir": "./src",
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "sourceMap": true,
+    "moduleResolution": "Node",
+    "removeComments": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}
