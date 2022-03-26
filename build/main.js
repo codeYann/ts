@@ -1,4 +1,7 @@
-"use strict";let numbers_list = [10.5, 15.5, 30.5, 45.5];
-numbers_list.forEach((items) => {
-  console.log(Math.ceil(items));
-});
+'use strict';
+const _index = require('./types/index');
+
+_index.printId.call(void 0, 10);
+_index.printId.call(void 0, [10, 15, 25, 30]);
+console.log(_index.getId.call(void 0, 10));
+console.log(_index.getId.call(void 0, [10, 15, 25, 30]));
