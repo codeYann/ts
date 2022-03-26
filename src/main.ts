@@ -1,7 +1,6 @@
-const numbersList = [10.5, 15.5, 30.5, 45.5];
-numbersList.forEach((items) => {
-  console.log(Math.ceil(items));
-});
+import {printId, getId} from './types/index';
 
-
-export {};
+printId(10);
+printId([10, 15, 25, 30]);
+console.log(getId(10));
+console.log(getId([10, 15, 25, 30]));
