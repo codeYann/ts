@@ -1,8 +1,7 @@
 'use strict';
-Object.defineProperty(exports, '__esModule', {value: true});
+Object.defineProperty(exports, '__esModule', { value: true });
 /**
  * We can combine types in functions arguments and also in return types.
- *
  */
 
 function printId(id) {
