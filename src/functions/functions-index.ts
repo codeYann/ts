@@ -1,13 +1,19 @@
 /**
  * Functions can be a type as well.
  */
-export function greeter(f: (a: string) => void, s: string): void {
-  f(s);
-};
 
-export function calling(message: string): void {
+// using type alias to create type for callback
+type greeterCallBack = (a: string) => string[];
+
+export function greeter(f: greeterCallBack, s: string): void {
+  f(s);
+}
+
+export function calling(message: string): string[] {
   let str = message
-  .split('')
-  .map(letters => letters.toUpperCase())
-  .forEach(letters => console.log(letters));
-} 
+    .split('')
+    .map((letters) => letters.toUpperCase());
+  str.forEach((letters) => console.log(letters));
+  return str;
+}
+
