@@ -1,23 +1,16 @@
-'use strict';
-
-function createNode(id, status) {
-  const newNode = {
-    id,
-    status,
-    next: null,
-  };
-  return newNode;
+"use strict";
+class qNode {
+  constructor(id, status) {
+    this.id = id;
+    this.status = status;
+    this.next = null;
+  }
 }
 
-function createQueue() {
-  const newQueue = {
-    head: null,
-    tail: null,
-    length: 0,
-  };
-  return newQueue;
-}
-
-function Append(id, status) {
-  let node = createNode(id, status);
+class Queue {
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
 }

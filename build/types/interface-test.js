@@ -1,9 +1,13 @@
-'use strict';
-Object.defineProperty(exports, '__esModule', { value: true }); /**
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true }); /**
  * We can use interface to define an object type
  */
 
-function createPerson(height, age, name) {
+function createPerson(
+  height,
+  age,
+  name,
+) {
   return {
     height,
     age,
