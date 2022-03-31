@@ -1,34 +1,24 @@
-type queueNode = {
-  id: number,
-  status: boolean,
-  next: queueNode | null,
-};
+class qNode {
+  public id: number;
+  public status: boolean;
+  public next: qNode | null;
 
-type Queue = {
-  head: queueNode | null,
-  tail: queueNode | null,
-  length: number,
-};
+  constructor(id: number, status: boolean) {
+    this.id = id;
+    this.status = status;
+    this.next = null;
+  }
+}
 
-function createNode(id: number, status: boolean): queueNode {
-  const newNode: queueNode = {
-    id,
-    status,
-    next: null,
-  };
-  return newNode;
-};
+class Queue {
+  public head: qNode | null;
+  public tail: qNode | null;
+  public length: number;
 
-function createQueue(): Queue {
-  const newQueue: Queue = {
-    head: null,
-    tail: null,
-    length: 0,
-  };
-  return newQueue;
-};
-
-function Append(id: number, status: boolean) {
-  let node = createNode(id, status); 
+  constructor() {
+    this.head = null;
+    this.tail = null;
+    this.length = 0;
+  }
 }
 
